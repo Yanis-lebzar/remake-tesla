@@ -1,0 +1,117 @@
+@font-face {
+  src: url("/fonts/Gotham.ttf");
+  font-family: roboto;
+}
+
+@font-face {
+  src: url("/fonts/GothamB.otf");
+  font-family: robotoRegular;
+}
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+  color: #393C41;
+  font-size: 14px;
+  background-image: url("/images/m3-homepage-desktop.jfif");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+  color: #222427;
+}
+
+main {
+  font-family: robotoRegular;
+  font-weight: 500;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  padding: 20px;
+}
+
+.header .logo img {
+  width: 90px;
+  height: auto;
+}
+
+.header .menuMiddle a {
+  padding: 0px 10px;
+}
+
+.header .menuRight {
+  position: absolute;
+  right: 45px;
+}
+
+.header .menuRight a {
+  padding: 0px 10px;
+  block-size: 100%;
+}
+
+.header .hamburger span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.header .hamburger span:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.main {
+  text-align: center;
+}
+
+.main section h1 {
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 2px;
+}
+
+.main section a {
+  text-decoration: underline;
+  padding: 2px;
+}
+/*# sourceMappingURL=style.css.map */

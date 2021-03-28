@@ -1,0 +1,42 @@
+.header {
+    padding: 20px;
+
+    .logo {
+        img {
+            width: 90px;
+            height: auto;
+        }
+    }
+
+    .menuMiddle {
+        a {
+            padding: 0px 10px;
+        }
+    }
+
+    .menuRight {
+        position: absolute;
+        right:45px;
+
+        a {
+            padding: 0px 10px;
+            block-size: 100%;
+
+        }
+
+    }
+
+    .hamburger {
+        span {
+            display: block;
+            width: 18px;
+            height: 2px;
+            background-color: #000000;
+
+            &:not(:last-child) {
+                margin-bottom: 3px;
+            }
+        }
+
+    }
+}
