@@ -27,16 +27,68 @@
     }
 
     .hamburger {
+        z-index: 50;
         span {
             display: block;
             width: 18px;
             height: 2px;
             background-color: #000000;
+            transition: 0.3s ease-in-out;
+
 
             &:not(:last-child) {
                 margin-bottom: 3px;
             }
         }
-
+ 
     }
+}
+
+.active {
+    & span:nth-child(2){
+        opacity:0;
+        transition: 0s;
+    }
+& span:nth-child(1){
+  transform: translateY(5px) rotate(45deg);
+}
+& span:nth-child(3){
+    transform: translateY(-5px) rotate(-45deg);
+
+}
+
+}
+#test{
+        transition:  0.3s ease-in-out;
+
+}
+.burger_id{
+    background-color: white;
+    width: 33vh;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transform: translateX(100%) ;
+}
+.activeBurger {
+    background-color: white;
+    width: 33vh;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transform: translateX(0%);
+}
+#full-size{
+    width: 100%;
+    height: 100%;
+    
+    /* overflow: hidden; */
+    position: absolute;
+}
+.mask{
+    background-color: rgba(0,0,0,.25);
+    transition: 0.5s;
+
 }
