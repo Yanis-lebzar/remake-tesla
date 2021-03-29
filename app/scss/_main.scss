@@ -1,19 +1,60 @@
 .main {
     text-align: center;
+    align-content: center;
+
     section {
         h1 {
 
             font-size: 40px;
-            margin-top: 50px;
+            margin-top: 90px;
             margin-bottom: 2px;
         }
 
         a {
-            text-decoration: underline;
-            padding: 2px;
+            color: #454546;
+            padding-bottom: 2px;
+            border-bottom: 1px solid #575858;
         }
 
     }
 
+    .mainButtons {
+        position: relative;
+        top: 600px;
 
+        & a {
+            position: flex;
+            padding: 12px 45px;
+            margin: 8px;
+            font-family: roboto;
+            color: white;
+            font-size: 13px;
+            line-height: 21px;
+            text-transform: uppercase;
+            font-weight: 400;
+
+            background-color: #2a2c30e7;
+            border-radius: 30px;
+
+            &:nth-child(2) {
+                padding: 12px 45px;
+                font-family: robotoRegular;
+                color: #171a20;
+                font-size: 12px;
+                line-height: 21px;
+                text-transform: uppercase;
+                font-weight: 400;
+                background-color: #ebeaeaef;
+
+            }
+        }
+    } 
+    & h3 {
+margin-top: 40px;
+        font-size: 14px;
+                line-height: 21px;
+                font-weight: 400;
+                color: #393c41;
+                
+    }
 }

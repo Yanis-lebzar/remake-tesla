@@ -25,6 +25,7 @@ body {
   font-family: roboto;
   color: #393C41;
   font-size: 14px;
+  letter-spacing: 1px;
   background-image: url("/images/m3-homepage-desktop.jfif");
   background-attachment: fixed;
   background-position: center;
@@ -68,8 +69,13 @@ main {
           align-items: center;
 }
 
+header {
+  text-align: center;
+}
+
 .header {
   padding: 20px;
+  text-align: center;
 }
 
 .header .logo img {
@@ -124,12 +130,26 @@ main {
           transform: translateY(-5px) rotate(-45deg);
 }
 
-#test {
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+#menuBurger {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  padding: 55px 20px 20px 20px;
+  overflow: scroll;
 }
 
-.burger_id {
+#menuBurger a {
+  padding: 20px 10px;
+  display: block;
+  font-family: roboto;
+  color: #393C41;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-bottom: 1px solid #d0d1d2;
+}
+
+.burger_menu {
   background-color: white;
   width: 33vh;
   height: 100vh;
@@ -166,16 +186,57 @@ main {
 
 .main {
   text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .main section h1 {
   font-size: 40px;
-  margin-top: 50px;
+  margin-top: 90px;
   margin-bottom: 2px;
 }
 
 .main section a {
-  text-decoration: underline;
-  padding: 2px;
+  color: #454546;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #575858;
+}
+
+.main .mainButtons {
+  position: relative;
+  top: 600px;
+}
+
+.main .mainButtons a {
+  position: flex;
+  padding: 12px 45px;
+  margin: 8px;
+  font-family: roboto;
+  color: white;
+  font-size: 13px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 400;
+  background-color: #2a2c30e7;
+  border-radius: 30px;
+}
+
+.main .mainButtons a:nth-child(2) {
+  padding: 12px 45px;
+  font-family: robotoRegular;
+  color: #171a20;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 400;
+  background-color: #ebeaeaef;
+}
+
+.main h3 {
+  margin-top: 40px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #393c41;
 }
 /*# sourceMappingURL=style.css.map */

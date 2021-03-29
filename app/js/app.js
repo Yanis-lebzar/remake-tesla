@@ -1,9 +1,7 @@
 // clique sur le burger
 let spanBurger = document.querySelector('.hamburger');
-let menuBurger = document.createElement('div');
+let menuBurger = document.querySelector('.burger_menu');
 let mask = document.querySelector('#full-size');
-menuBurger.classList.toggle('burger_id');
-menuBurger.id = 'test'
 // barre du milieu qui disparait + barre du haut et du bas qui rotate  
 spanBurger.addEventListener('click', event =>{
     //document.body.style = "overflow : hidden;"

@@ -1,6 +1,11 @@
+
+header{
+    text-align: center;
+}
+
 .header {
     padding: 20px;
-
+text-align: center;
     .logo {
         img {
             width: 90px;
@@ -25,6 +30,9 @@
         }
 
     }
+
+
+    // burger menu //
 
     .hamburger {
         z-index: 50;
@@ -58,11 +66,26 @@
 }
 
 }
-#test{
-        transition:  0.3s ease-in-out;
+#menuBurger{
+    
+    
+        transition:  0.2s ease-in-out;
+        padding: 55px 20px 20px 20px;
+        overflow: scroll;
+            & a{
+                padding: 20px 10px;
+                display: block;
+                font-family: roboto;
+color: #393C41;
+font-size: 14px;
+line-height: 18px;
+text-transform: uppercase;
+font-weight: 400;
+border-bottom: 1px solid #d0d1d2;
+            }
 
 }
-.burger_id{
+.burger_menu{
     background-color: white;
     width: 33vh;
     height: 100vh;
