@@ -185,9 +185,17 @@ header {
 }
 
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 600px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main section h1 {
@@ -200,11 +208,6 @@ header {
   color: #454546;
   padding-bottom: 2px;
   border-bottom: 1px solid #575858;
-}
-
-.main .mainButtons {
-  position: relative;
-  top: 600px;
 }
 
 .main .mainButtons a {

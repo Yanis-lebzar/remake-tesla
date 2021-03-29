@@ -1,6 +1,10 @@
 .main {
+    display: flex;
     text-align: center;
-    align-content: center;
+    flex-wrap: wrap;
+    gap: 600px;
+    flex-direction: column;
+
 
     section {
         h1 {
@@ -19,8 +23,6 @@
     }
 
     .mainButtons {
-        position: relative;
-        top: 600px;
 
         & a {
             position: flex;
