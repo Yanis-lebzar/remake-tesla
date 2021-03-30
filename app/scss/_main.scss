@@ -1,12 +1,10 @@
 .main {
     display: flex;
     text-align: center;
-    flex-wrap: wrap;
-    gap: 600px;
     flex-direction: column;
-
-
-    section {
+    height: 85%;
+    justify-content: space-between;
+    .M3 {
         h1 {
 
             font-size: 40px;
