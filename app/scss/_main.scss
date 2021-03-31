@@ -4,6 +4,7 @@
     flex-direction: column;
     height: 85%;
     justify-content: space-between;
+    
     .M3 {
         h1 {
 
@@ -21,8 +22,12 @@
     }
 
     .mainButtons {
-
+        
         & a {
+            @media (max-width: 700px) {
+                display: block;
+                padding: 12px 45px;               
+            }
             position: flex;
             padding: 12px 45px;
             margin: 8px;
