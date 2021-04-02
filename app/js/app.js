@@ -80,6 +80,8 @@ mask.onclick = () => {
 
 }
 
+// animations //
+
 
 
 

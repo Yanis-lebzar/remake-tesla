@@ -40,15 +40,22 @@
     </header>
     <main class="main">
         <div class="M3">
-            <h1>Model 3</h1>
+            <h1 class="M3h1">Model 3</h1>
             <a href="" class="linkM3"> Réservez un essai sans contact</a>
         </div>
         <div class="mainButtons">
-            <a href="">Configuration personnalisée</a>
-            <a href="">Véhicules disponibles</a>
-            <h3>A reçu la note maximale de 5 étoiles par Euro NCAP</h3>
+            <a href="" class="bLeft">Configuration personnalisée</a>
+            <a href="" class="bRight">Véhicules disponibles</a>
+            
         </div>
+        <h3 class="h3Main">A reçu la note maximale de 5 étoiles par Euro NCAP</h3>
+        
     </main>
+    <div class="scrollIndication">
+        <span class="arrow down"></span>
+        
+    </div>
+
     <div class="burger_menu" id="menuBurger">
         <a href="">Véhicules disponibles</a>
         <a href="">Véhicules d'occasion</a>
@@ -92,7 +99,19 @@
     </div>
 
     <script src="app/js/app.js"></script>
-</body>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
+  <script>
+
+gsap.from('.M3h1', {opacity: 0, duration: 1, y: 40, ease: "power2", delay: 1});
+gsap.from('.linkM3', {opacity: 0, duration: 0.5, delay: 1.8});
+gsap.from('.bLeft', {opacity: 0, duration: 0.5, x: -50, delay: 1.9 });
+gsap.from('.bRight', {opacity: 0, duration: 0.5, x: 50, delay: 1.9 });
+gsap.from('.h3Main', {opacity: 0, duration: 0.8, y: -30, delay: 2.1 });
+gsap.from('.arrow', {opacity: 0, duration: 0.8, y: -30, delay: 2.1 });
+
+  </script>  
+
 </body>
 
 </html>

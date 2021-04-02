@@ -4,8 +4,10 @@
     flex-direction: column;
     height: 85%;
     justify-content: space-between;
+    align-items: center;
     
     .M3 {
+        flex: 1;
         h1 {
 
             font-size: 40px;
@@ -22,14 +24,22 @@
     }
 
     .mainButtons {
-        
+        @media (max-width: 700px) {
+            display: block;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        letter-spacing: 0.5px;
+
         & a {
             @media (max-width: 700px) {
                 display: block;
-                padding: 12px 45px;               
+                padding: 10px 40px; 
+                min-width: 50%;              
             }
-            position: flex;
-            padding: 12px 45px;
+            padding: 10px 40px;
             margin: 8px;
             font-family: roboto;
             color: white;
@@ -42,10 +52,10 @@
             border-radius: 30px;
 
             &:nth-child(2) {
-                padding: 12px 45px;
-                font-family: robotoRegular;
+                padding: 10px 40px;
+                font-family: roboto;
                 color: #171a20;
-                font-size: 12px;
+                font-size: 13px;
                 line-height: 21px;
                 text-transform: uppercase;
                 font-weight: 400;
@@ -55,11 +65,39 @@
         }
     } 
     & h3 {
-margin-top: 40px;
         font-size: 14px;
                 line-height: 21px;
                 font-weight: 400;
                 color: #393c41;
                 
+    }
+   
+   
+}
+.scrollIndication{
+    display: flex;
+    justify-content: center;
+    .arrow {
+
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 8px;  
+        border-radius: 2px;
+        animation: 1.8s ease 1s  infinite normal descent ;
+        &.down {
+            transform: rotate(45deg);
+            
+        }
+    }
+    @keyframes descent {
+        0%{
+            margin-top: 0%;
+        } 50% {
+    margin-top: 10px;
+        }100%{
+            margin-top: 0%;
+        }
+       
     }
 }

@@ -270,6 +270,15 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .M3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .main .M3 h1 {
@@ -284,9 +293,28 @@ header {
   border-bottom: 1px solid #575858;
 }
 
+.main .mainButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 700px) {
+  .main .mainButtons {
+    display: block;
+  }
+}
+
 .main .mainButtons a {
-  position: flex;
-  padding: 12px 45px;
+  padding: 10px 40px;
   margin: 8px;
   font-family: roboto;
   color: white;
@@ -301,15 +329,16 @@ header {
 @media (max-width: 700px) {
   .main .mainButtons a {
     display: block;
-    padding: 12px 45px;
+    padding: 10px 40px;
+    min-width: 50%;
   }
 }
 
 .main .mainButtons a:nth-child(2) {
-  padding: 12px 45px;
-  font-family: robotoRegular;
+  padding: 10px 40px;
+  font-family: roboto;
   color: #171a20;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 21px;
   text-transform: uppercase;
   font-weight: 400;
@@ -317,10 +346,57 @@ header {
 }
 
 .main h3 {
-  margin-top: 40px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #393c41;
+}
+
+.scrollIndication {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scrollIndication .arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 2px;
+  -webkit-animation: 1.8s ease 1s  infinite normal descent;
+          animation: 1.8s ease 1s  infinite normal descent;
+}
+
+.scrollIndication .arrow.down {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@-webkit-keyframes descent {
+  0% {
+    margin-top: 0%;
+  }
+  50% {
+    margin-top: 10px;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+@keyframes descent {
+  0% {
+    margin-top: 0%;
+  }
+  50% {
+    margin-top: 10px;
+  }
+  100% {
+    margin-top: 0%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
